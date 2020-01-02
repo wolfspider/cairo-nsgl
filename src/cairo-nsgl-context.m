@@ -91,7 +91,7 @@ _nsgl_make_current (void *abstract_ctx, cairo_gl_surface_t *abstract_surface)
     cairo_nsgl_surface_t *surface = (cairo_nsgl_surface_t *) abstract_surface;
 
     /* Set the window as the target of our context. */
-    [ctx->context setView: surface->view];
+    //[ctx->context setView: surface->view];
 }
 
 static void

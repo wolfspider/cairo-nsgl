@@ -51,7 +51,9 @@
 
 #include "cairo-gl.h"
 
-#if CAIRO_HAS_GL_SURFACE
+#if CAIRO_HAS_NSGL_FUNCTIONS
+#include <OpenGL/gl.h>
+#elif CAIRO_HAS_GL_SURFACE
 #include <GL/gl.h>
 #include <GL/glext.h>
 #elif CAIRO_HAS_GLESV2_SURFACE
